@@ -1,0 +1,334 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    max-width: 1190px;
+    margin: 0 auto;
+}
+/* Header */
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 53px;
+}
+.sticky{
+    position: fixed;
+    background: #fff;
+    width:100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+}
+.nav-link{
+    margin-left: 37px;
+    text-decoration: none;
+    color: #202020;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color  0.2s linear;
+}
+.nav-link:hover{
+    color:#3F1DB9;
+    border-bottom:2px solid #3F1DB9;
+    padding-bottom: 5px;
+}
+.nav-link:nth-child(3) {
+    margin-right: 37px;
+}
+.about{
+    margin-top: 117px;
+    margin-bottom: 100px;
+}
+.about h1{
+    font-weight: bold;
+    font-size: 57px;
+    line-height: 65px;
+    margin-bottom: 35px;
+}
+.about p{
+    font-size: 32px;
+    line-height: 51px;
+    max-width: 740px;
+    color: #4F4F4F;
+    margin-bottom: 70px;
+}
+.about .contact-btn{
+    font-size: 24px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: normal;
+    padding: 16px 58px;
+    border-radius: 10px;
+}
+/* btn */
+.contact-btn{
+    text-decoration: none;
+    color:#fff;
+    background-color:#5528FF;
+    padding: 4.5px 13px;
+    border-radius: 5px;
+    transition:background-color  0.2s linear;
+}
+.contact-btn:hover{
+    background-color:#281377;
+}
+/* service */
+.service-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin-left: 75px;
+}
+.services h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C2C2C2;
+    margin-bottom: 100px;
+}
+.service-block{
+    display: flex;
+    align-items: center;
+    width:50%;
+    margin-bottom: 82px;
+}
+
+.discription{
+    width:100%;
+    max-width:292px;
+    margin-left: 67px;
+}
+.discription h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    color:#000;
+    margin-bottom: 17px;
+}
+.discription p{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #B2B2B2;
+}
+.service-img-block{
+    height:61px;
+    width:80px;
+    text-align: center;
+}
+/* clients */
+.Clients h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C2C2C2;
+    margin-bottom: 57px;
+}
+.clients-inner{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+.clients-block{
+    width:25%;
+    height:54px;
+    text-align: center;
+    vertical-align: center;
+    margin-bottom: 53px;
+}
+/* team */
+.team h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C2C2C2;
+    margin-bottom: 100px;
+}
+.team-inner{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.team-block{
+    display: flex;
+    align-items: center;
+    width:33.3333333%;
+    margin-bottom: 60px;
+}
+.about-team{
+    margin-left: 35px;
+}
+.about-team h2{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #202020;
+    margin-bottom: 11px;
+}
+.about-team p{
+    font-size: 14px;
+    line-height: 16px;
+    color: #B2B2B2;
+}
+/* footer */
+.footer{
+    background-color: #F7F7F7;
+}
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0;
+}
+.social img{
+    margin-left: 40px;
+}
+
+/* media */
+@media (max-width:1200px) {
+    .wrapper{
+        width:1190px;
+    }
+}
+@media  (max-width:1199px) {
+    .wrapper{
+        width:960px;
+    }
+    .service-inner{
+        margin: 0;
+    }
+}
+@media (max-width:992px){
+    .wrapper{
+        width:720px;
+    }
+    .header-inner{
+        margin-top: 0;
+        padding: 10px 0;
+    }
+    .about{
+        margin-top: 70px;
+        width:650px;
+    }
+    .about h1{
+        font-size:45px ;
+        line-height: 65px;
+    }
+    .about p{
+        font-size: 26px;
+        line-height: 51px;
+    }
+    .service-block{
+        width:100%;
+       justify-content: center;
+    }
+    .discription{
+        max-width: 350px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .discription p{
+        font-size: 17px;
+    }
+    .clients-block{
+        width:33.3333333%;
+    }
+    .team-block{
+        width:50%;
+        text-align: center;
+    }
+    .team-inner{
+        justify-content: center;
+        margin-left: 48px;   
+    }
+}
+@media (max-width:575px){
+    .wrapper{
+        width:100%;
+    }
+    .header-inner{
+        padding: 5px 0;
+    }
+    .header-inner img{
+        height: 40px;
+    }
+    .about h1{
+        font-size:25px ;
+        line-height: 25px;
+        width:400px
+    }
+    .about p{
+        font-size: 14px;
+        line-height: 30px;
+        width:400px;
+    }
+    .clients-block{
+        width:50%
+    }
+    .team-block{
+        width:100%;
+        text-align: center;
+    }
+    .nav{
+        display: none;
+    }
+    .about{
+        width:100%;
+        padding: 0 10px;
+        margin: 30px 0;
+    }
+    .services h1{
+        margin-bottom: 50px;
+    }
+    .about .contact-btn{
+        padding: 10px 20px;
+        font-size: 17px;
+    }
+    .about h1{
+        width:100%;
+    }
+    .about p{
+        width:100%;
+    }
+    .service-inner{
+        align-items: center;
+    }
+    .discription{
+        width:200px;
+        margin-left: 10px;
+    }
+    .discription h1{
+        font-size: 20px;
+    }
+    .discription p{
+        font-size: 12px;
+    }
+
+}
+
+
+
